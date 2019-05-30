@@ -4,7 +4,8 @@ import vtk, qt, ctk, slicer
 from slicer.ScriptedLoadableModule import *
 import logging
 import sys
-sys.path.append('/home/safari/Desktop/tutkimus/Slicer/HackathonJAN/gitstuff/auto3dgm/')
+cwd=os.getcwd()
+sys.path.append(cwd+'Auto3dgm/auto3dgm/')
 from auto3dgm.dataset.datasetfactory import DatasetFactory
 from auto3dgm.mesh.subsample import Subsample
 from numpy.random import permutation
