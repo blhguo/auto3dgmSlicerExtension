@@ -5,7 +5,7 @@ from slicer.ScriptedLoadableModule import *
 import logging
 import sys
 cwd=os.getcwd()
-sys.path.append(cwd+'Auto3dgm/auto3dgm/')
+sys.path.append(cwd+'/auto3dgmSlicerExtension/auto3dgm/')
 from auto3dgm.dataset.datasetfactory import DatasetFactory
 from auto3dgm.mesh.subsample import Subsample
 from numpy.random import permutation
